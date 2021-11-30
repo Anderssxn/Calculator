@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@300;400;500;900&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: rgb(22, 22, 27);
+    background-image: url(src/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: local;
+}
+.calc {
+    margin: 5%;
+    width: 400px;
+    height: auto;
+    background-color: rgb(24, 30, 41);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    border-bottom: 5px solid rgb(9, 11, 15);;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.61);
+
+}
+
+    #screen {
+        display: flex;
+        height: 150px;
+        width: 350px;
+        background: rgb(115, 163, 143);
+        border-radius: 5px;
+        margin: 20px;
+        box-shadow: 0px 0px 30px rgb(115, 163, 143); ;
+        display: flex;
+        flex-flow: column ;
+    }
+
+        .operation {
+           display: flex;
+
+           align-items: center;
+           height: 100px;
+            overflow-x: scroll;
+           -ms-overflow-style: none;  
+           scrollbar-width: none; 
+        }
+        
+        .operation::-webkit-scrollbar {
+            display: none;
+        }
+        .result::-webkit-scrollbar {
+            display: none;
+        }
+        .result {
+            margin: 100% 0px 0px 20px 0px;
+            margin: 20px;
+            display: flex;
+            text-align: right;
+            align-content: flex-end;
+            justify-content: flex-end;
+            align-items: center;
+           height: 120px;
+            overflow-x: scroll;
+           -ms-overflow-style: none;  
+           scrollbar-width: none; 
+        }
+        
+            .operation-screen {
+                font-size: 20px;
+                color: rgb(202, 243, 225);
+                text-shadow: rgb(229, 255, 244) 0px 0px 5px;
+                margin: 0px 20px;
+               
+
+            }
+            
+            .result-screen {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                text-decoration: none;
+                color: rgb(202, 243, 225);
+                text-shadow: rgb(229, 255, 244) 0px 0px 5px;
+                font-size: 35px;
+            }
+
+.pad {
+    display: flex;
+    flex-flow: row ;
+    margin-bottom: 20px;
+}
+.pad * {
+    text-align: center;
+}
+.numpad{
+    display: flex;
+
+
+    flex-flow: row wrap;
+    margin-left: 20px;
+}
+
+
+.operators {
+    display: flex;
+    justify-content: end;
+    flex-flow: row wrap;
+    margin-right: 20px;
+
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(42, 54, 75);
+    color: white;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 4px;
+    border-bottom: 5px solid rgb(33, 42, 58);;
+    margin: 10px;
+    flex: 1 1 auto;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+                                                            
+}
+
+.button:hover {
+    background: rgb(29, 38, 53);
+    color: white;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 4px;
+    border-bottom: 5px solid rgb(23, 29, 39);;
+}
+
+.button:active {
+    background: rgb(53, 69, 95);
+    color: white;
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 4px;
+    border-bottom: 5px solid rgb(48, 62, 85);;
+}
+
+
+
+.op-btn {
+    background: #d17600;
+    border-bottom: 5px solid #9e5400;
+}
+
+.op-btn:hover{
+    background: #9e5a00;
+    border-bottom: 5px solid #6e3b00;
+}
+
+.op-btn:active {
+    background: #ff9f20;
+    border-bottom: 5px solid #c77517;
+}
+
+.me {
+    color: wheat;
+    text-decoration: none;
+    font-style: italic;
+}
+
+footer *{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.gray {
+    color: gray;
+}
+
+.hrfooter {
+    height: 2px;
+        background-color: rgb(102, 102, 102);
+        border: none;
+}
